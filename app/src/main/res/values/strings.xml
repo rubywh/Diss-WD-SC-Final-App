@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">finalapp</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+    <string name="begin">Begin</string>
+    <string name="finish">Finish</string>
+</resources>

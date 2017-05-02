@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    tools:context="ruby.finalapp.SenseActivity"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn3"
+            style="@android:style/Widget.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onFinishClick"
+            android:text="@string/finish"
+            android:textAppearance="@style/TextAppearance.Wearable.Large" />
+
+        <TextView
+            android:id="@+id/sc"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="0 steps"
+            android:textAppearance="@style/TextAppearance.Wearable.Medium"
+            android:textColor="@color/green" />
+
+        <LinearLayout
+            android:layout_width="156dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onStartClick"
+                android:text="@string/start"
+                android:textAppearance="@style/TextAppearance.Wearable.Medium"
+                android:textColor="@color/black"
+                style="@android:style/Widget.Button.Small" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@android:style/Widget.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onStopClick"
+                android:text="@string/stop"
+                android:textAppearance="@style/TextAppearance.Wearable.Medium" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.wearable.view.BoxInsetLayout>
